@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smugler Yazılım | Bize Ulaşın</title>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Smugler Yazılım, yazılım geliştirme ve teknoloji çözümleri konusunda profesyonel hizmetler sunmaktadır.">
+  <meta name="keywords" content="yazılım, teknoloji, çözümler, yazılım geliştirme, yazılım hizmetleri">
+  <meta name="author" content="Smugler Yazılım">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1e1e2f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #f1f1f1;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #3c3c5c;
+      border-radius: 5px;
+    }
+
+    /* Active class for the navbar */
+    .navbar .active {
+      background-color: #50b3a2;
+      border-radius: 5px;
+    }
+
+    /* Logo as a link to the homepage */
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      margin-right: auto;
+      padding-left: 20px;
+    }
+
+    .navbar .logo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2b2b4a;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    textarea {
+      height: 160px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #2b2b4a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #44446c;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e1e2f;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #50b3a2;
+    }
+
+    footer .social-links {
+      margin-top: 20px;
+    }
+
+    footer .social-links a {
+      margin: 0 15px;
+      font-size: 24px;
+    }
+
+    footer .social-links a:hover {
+      color: #50b3a2;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .navbar a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Scroll Animations */
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">Smugler Yazılım</a> <!-- Bu satır, "Smugler Yazılım" yazısını anasayfaya bağlar -->
+    </div>
+    <a href="#">Anasayfa</a>
+    <a href="#">Hizmetler</a>
+    <a href="#">Projeler</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">Misyon & Vizyon</a>
+    <a href="#" class="active">Bize Ulaşın</a>
+  </div>
+
+  <!-- İletişim Formu -->
+  <div class="container fade-in">
+    <h2>Bize Ulaşın</h2>
+    <form action="mailto:seninmailin@example.com" method="post" enctype="text/plain">
+      <label for="name">Ad Soyad</label>
+      <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+
+      <label for="email">E-posta</label>
+      <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
+
+      <label for="message">Mesajınız</label>
+      <textarea id="message" name="message" placeholder="Bize nasıl yardımcı olabiliriz?" required></textarea>
+
+      <button type="submit">Mesaj Gönder</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Smugler Yazılım. Tüm Hakları Saklıdır.</p>
+    <p>
+      <a href="#">Gizlilik Politikası</a> | 
+      <a href="#">Kullanım Şartları</a> | 
+      <a href="#">İletişim</a>
+    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">🔗</a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook">📘</a>
+      <a href="https://twitter.com" target="_blank" title="Twitter">🐦</a>
+    </div>
+  </footer>
+
+</body>
+</html>
